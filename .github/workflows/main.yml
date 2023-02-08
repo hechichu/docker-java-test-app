@@ -11,7 +11,7 @@ jobs:
   services:
     redis:
       images: redis
-        options: >-
+        options:
           --health-cmd "redis-clis ping"
           --health-interval 5s
           --health-timeout 5s
